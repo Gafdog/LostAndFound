@@ -12,6 +12,10 @@
     <string name="lost">Lost</string>
     <string name="save">Save</string>
     <string name="remove">Remove</string>
+    <string name="showMap">Show on Map</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="placesAPI">AIzaSyArKsiPLKIl66wWUswQYwlt2GbwQn0qQ9s</string>
 </resources>

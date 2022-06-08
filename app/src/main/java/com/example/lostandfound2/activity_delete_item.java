@@ -85,6 +85,7 @@ public class activity_delete_item extends AppCompatActivity {
             public void onClick(View view) {
 
                 db.DeleteItem(numb);
+
                 finish();
             }
         });

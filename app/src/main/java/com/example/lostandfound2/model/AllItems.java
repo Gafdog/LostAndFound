@@ -9,8 +9,9 @@ public class AllItems {
     private String item_Date;
     private String item_Location;
     private String item_LostFound;
+    private Double latitude, longitude;
 
-    public AllItems(String item_name, String item_Description,String item_Location,String item_Phone,  String item_Date,  String item_LostFound) {
+    public AllItems(String item_name, String item_Description,String item_Location,String item_Phone,  String item_Date,  String item_LostFound, Double latitude, Double longitude) {
 
         this.item_name = item_name;
         this.item_Phone = item_Phone;
@@ -18,6 +19,9 @@ public class AllItems {
         this.item_Date = item_Date;
         this.item_Location = item_Location;
         this.item_LostFound = item_LostFound;
+        this.latitude = latitude;
+        this.longitude = longitude;
+
     }
 
     public AllItems(int item_id, String item_name, String item_Description,String item_Location,String item_Phone,  String item_Date,  String item_LostFound) {
@@ -59,6 +63,9 @@ public class AllItems {
         return item_LostFound;
     }
 
+    public Double getLatitude(){return latitude;}
+    public Double getLongitude(){return longitude;}
+
     public void setItem_name(String item_name) {
         this.item_name = item_name;
     }
@@ -81,5 +88,8 @@ public class AllItems {
     public void setItem_LostFound(String item_LostFound) {
         this.item_LostFound = item_LostFound;
     }
+
+    public void setLatitude (Double latitude) {this.latitude = latitude;}
+    public void setLongitude (Double longitude) {this.longitude = longitude;}
 
 }
